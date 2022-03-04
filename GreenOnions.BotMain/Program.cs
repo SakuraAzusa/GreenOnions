@@ -100,7 +100,7 @@ namespace GreenOnions.BotMain
             catch (Exception ex)
             {
                 ErrorHelper.WriteErrorLog(ex);
-                ConnectedEvent?.Invoke(false, ex.Message);
+                ConnectedEvent?.Invoke(false, ex.ToString());
             }
         }
     }
